@@ -17,6 +17,8 @@ for key in FONTS:
                 '<title>Health Is a Team Sport — '+TITLES[key]+'</title>')
     s=s.replace(oldfont, '<link href="'+FONTS[key]+'"')
     s=s.replace('href="css/style.css"', 'href="css/variant-'+key+'.css"')
+    s=s.replace('href="https://healthisateamsport.com/"', 'href="https://healthisateamsport.com/variant-'+key+'.html"')
+    s=s.replace('content="https://healthisateamsport.com/"', 'content="https://healthisateamsport.com/variant-'+key+'.html"')
     links=[]
     for f,n in NAMES:
         cur = CUR if f=='variant-'+key+'.html' else ''

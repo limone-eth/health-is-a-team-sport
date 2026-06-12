@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset="utf8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Newsreader:ital@1&family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden; position:relative; background:#161309; }
+  .bg { position:absolute; inset:0; }
+  .bg img { width:100%; height:100%; object-fit:cover; object-position:center 30%; }
+  .scrim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(22,19,9,.72), rgba(22,19,9,.18) 38%, rgba(22,19,9,.62)); }
+  .mast { position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; padding:26px 44px;
+    font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:600; letter-spacing:.14em; color:#f2ecdf; }
+  .mast span:first-child { color:#c9f73a; }
+  .title { position:absolute; left:44px; top:104px; color:#f2ecdf; font-family:Anton, sans-serif;
+    font-size:104px; line-height:.95; text-transform:uppercase; }
+  .title .l2 { display:block; padding-left:170px; }
+  .title em { font-family:"Newsreader", serif; font-style:italic; text-transform:lowercase; color:#c9f73a; }
+  .sticker { position:absolute; right:64px; top:118px; transform:rotate(-7deg);
+    background:#c9f73a; color:#161309; border:3px solid #161309; box-shadow:6px 6px 0 rgba(22,19,9,.9);
+    font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:19px; letter-spacing:.1em; padding:14px 20px; }
+  .deck { position:absolute; left:44px; bottom:84px; max-width:560px; color:#f2ecdf;
+    font-family:"Newsreader",serif; font-style:italic; font-size:24px; line-height:1.35; }
+  .deck b { color:#c9f73a; font-weight:400; }
+  .strip { position:absolute; left:0; right:0; bottom:0; display:flex; justify-content:space-between;
+    background:#c9f73a; color:#161309; padding:16px 44px;
+    font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:17px; letter-spacing:.12em; }
+</style>
+<body>
+  <div class="bg"><img src="../assets/img/hero.jpg"></div>
+  <div class="scrim"></div>
+  <div class="mast"><span>VOL. 01 — THE BELONGING ISSUE</span><span>AN EDITORIAL THESIS</span></div>
+  <div class="title">HEALTH<span class="l2">IS A <em>team</em></span>SPORT</div>
+  <div class="sticker">97–99% FINISH</div>
+  <div class="deck">The hardest things we do with our bodies get <b>categorically easier</b> the moment we stop doing them alone.</div>
+  <div class="strip"><span>HEALTHISATEAMSPORT.COM</span><span>✶ FIND YOUR PEOPLE</span></div>
+</body>
