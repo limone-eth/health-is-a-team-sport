@@ -36,6 +36,17 @@
 </head>
 <body>
 
+<!-- liquid-glass refraction filter (referenced only by the Omea variant) -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <filter id="glassRefract" x="-12%" y="-12%" width="124%" height="124%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.013 0.016" numOctaves="2" seed="7" result="noise"/>
+      <feGaussianBlur in="noise" stdDeviation="1.1" result="noiseBlur"/>
+      <feDisplacementMap in="SourceGraphic" in2="noiseBlur" scale="15" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
 <!-- progress track -->
 <div class="track-progress" aria-hidden="true"><div class="track-progress__bar"></div></div>
 
@@ -174,6 +185,14 @@
     <p class="hill__kicker mono">THE HILL EXPERIMENT — SAME HILL, DIFFERENT EYES</p>
     <div class="hill__stage">
       <svg id="hillSvg" viewBox="0 0 800 320" preserveAspectRatio="xMidYMax meet" aria-label="A hill that looks less steep when a friend stands beside you">
+        <defs>
+          <!-- colored-glass slope gradient (referenced only by the Omea variant) -->
+          <linearGradient id="hillGrad" gradientUnits="userSpaceOnUse" x1="160" y1="300" x2="800" y2="60">
+            <stop offset="0" stop-color="#f0967f" stop-opacity="0.82"></stop>
+            <stop offset="0.5" stop-color="#96cdec" stop-opacity="0.78"></stop>
+            <stop offset="1" stop-color="#9ed0a0" stop-opacity="0.74"></stop>
+          </linearGradient>
+        </defs>
         <path id="hillPath" d="M 160 300 L 800 60 L 800 300 Z" fill="#b4451f" opacity="0.92"></path>
         <line x1="0" y1="300" x2="800" y2="300" stroke="#161309" stroke-width="3"></line>
         <!-- you -->

@@ -6,9 +6,10 @@ FONTS={
  'night':"https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap",
  'atelier':"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap",
  'fieldday':"https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400..600&display=swap",
+ 'omea':"https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,301,401&display=swap",
 }
-TITLES={'night':'Night Issue','atelier':'Atelier Edition','fieldday':'Field Day'}
-NAMES=[('index.html','Original'),('variant-night.html','Night'),('variant-atelier.html','Atelier'),('variant-fieldday.html','Field Day')]
+TITLES={'night':'Night Issue','atelier':'Atelier Edition','fieldday':'Field Day','omea':'Omea Edition'}
+NAMES=[('index.html','Original'),('variant-night.html','Night'),('variant-atelier.html','Atelier'),('variant-fieldday.html','Field Day'),('variant-omea.html','Omea')]
 oldfont=re.search(r'<link href="https://fonts\.googleapis\.com/css2\?[^"]*"', base).group(0)
 CUR=' class="is-current"'
 for key in FONTS:
